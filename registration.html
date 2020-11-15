@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="robots" content="all">
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="/img/logo.png" />
+  <meta property="og:description" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <meta name="theme-color" content="#d05252">
+
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!--[if lt IE 9]>
+<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="
+http://browsehappy.com/">обновите</a>
+<![endif]-->
+
+  <div class="wrapper" id="top">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row jsb ab">
+            <div class="region">
+              <span>Ваш регион</span>
+              <span class="you-region">Новосибирск</span>
+            </div>
+            <div class="header__adress">г. Новосибирск, Красный пр-т, 153Б</div>
+            <div class="email"><a href="mailto:sale@tkani-textiliya.ru">sale@tkani-textiliya.ru</a></div>
+            <div class="chain"><a href="/**/">Магазины у метро</a></div>
+            <div class="net">
+              <ul class="net-list row">
+                <li class="net-item fst"><a href=""><img src="img/misc/01.png" alt=""></a></li>
+                <li class="net-item scnd"><a href=""><img src="img/misc/02.png" alt=""></a></li>
+                <li class="net-item frd"><a href=""><img src="img/misc/03.png" alt=""></a></li>
+                <li class="net-item fos"><a href=""><img src="img/misc/04.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="container">
+          <div class="row jsb ac">
+            <button class="menu-trigger" type="button"></button>
+            <div class="logo search">
+              <div class="logo__pic"><img src="img/logo.svg" alt="Текстилия"> <span class="logo__text">Модные ткани
+                  оптом и в розницу</span></div>
+              <button type="button" class="search__open-btn"><img src="img/search.svg"></button>
+              <div class="search__wrap">
+                <form action="/***/" id="search__form" name="search__form" class="search__form" method="POST">
+                  <label class="search__form-label" for="search">
+                    <input type="search" name="search" class="search__form-input" id="search__form-input"
+                      placeholder="Например, вельвет">
+                    <button type="submit" class="search-form__button">Найти</button>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="phones">
+              <ul class="phones__list">
+                <li class="phones__item"><a href="tel:+78002004150">8 800-200-4150</a> опт</li>
+                <li class="phones__item"><a href="tel:+78005518980">8 800-551-8980</a> розница</li>
+                <li class="phones__item"><img src="img/misc/wtp.svg" alt=""><a href="https://wa.me/89513661969">8 951
+                    366 19 69</a></li>
+              </ul>
+            </div>
+            <div class="user row">
+              <div class="user__wrap row ac" onClick="return true">
+                <div class="user__avatar"><img src="img/user.svg" alt="" class="user__pic"></div>
+                <ul class="user__menu">
+                  <li class="user__menu-item"><span class="login-btn">Войти</span></li>
+                  <li class="user__menu-item"><a class="registr-btn" href="///">Регистрация</a></li>
+                </ul>
+              </div>
+              <div class="user__login form">
+                <button class="close" type="button">x</button>
+                <div class="user__title">Вход в личный кабинет</div>
+                <form action="/**/" method="POST" name="login-form" id="login-form" class="login-form">
+                  <div class="form__row">
+                    <label class="form__label" for="login-email">E-mail</label>
+                    <input class="form__input" type="email" name="login-email" id="login-email"
+                      placeholder="Введите ваш e-mail">
+                  </div>
+                  <div class="form__row password">
+                    <label class="form__label" for="login-password">Пароль</label>
+                    <input class="form__input" type="password" name="login-password" id="login-password"
+                      placeholder="Введите ваш пароль">
+                  </div>
+                  <div class="form__row">
+                    <button class="btn" id="btn-login" type="submit">Войти</button> <a href="/**/"
+                      class="btn-link">Забыли пароль?</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <a href="/***/" class="bookmarks"><span class="score bookmarks__score">45</span><img src="img/like.svg"
+                alt=""></a>
+            <div class="cart">
+              <a href="**/" class="cart__link">
+                <span class="score cart__link-score">99</span>
+                <img src="img/cart.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__nav">
+        <button class="mobil-sx menu-close">Close menu</button>
+        <div class="container">
+          <div class="logo__pic mobil"><img src="img/logo.svg" alt="Текстилия"> <span class="logo__text mobil">Модные
+              ткани
+              оптом и в розницу</span></div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item current"><a class="nav__link" href="">Ткани опт</a></li>
+              <li class="nav__item dropdown"><a class="nav__link" href="">Ткани для одежды</a><span
+                  class="mobil dropdown__trigger"></span>
+                <div class="dropdown__wrap">
+                  <button class="mobil dropdown__close" type="button">В меню</button>
+                  <div class="row">
+                    <div class="dropdown__pic"><a href="*/*"><img src="img/box.jpg" alt=""></a></div>
+                    <div class="dropdown__col">
+                      <div class="dropdown__title">По назначению</div>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Детские</span>
+                            <span class="link-count">105</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Для домашней одежды</span>
+                            <span class="link-count">173</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Для рукоделия</span>
+                            <span class="link-count"> 28</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Костюмные</span> <span
+                              class="link-count">266</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Курточные и плащевые</span>
+                            <span class="link-count"> 76</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Мех, кожа, замша</span>
+                            <span class="link-count"> 83</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Нарядные</span>
+                            <span class="link-count">236</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Пальтовые</span>
+                            <span class="link-count">61</span></a>
+                        </li>
+                        <li class="dropdown__item submenu">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Плательные и блузочные</span>
+                            <span class="link-count">591</span>
+                          </a>
+                          <span class="mobil submenu__trigger"></span>
+                          <ul class="submenu__list">
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Вельвет</span>
+                                <span class="link-count">26</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Джинс</span>
+                                <span class="link-count">8</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Жаккард</span>
+                                <span class="link-count">24</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Клетка, полоска для Lorem
+                                  ipsum dolor sit amet.</span>
+                                <span class="link-count">27</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Офисные</span>
+                                <span class="link-count">149</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Сатин костюмный</span>
+                                <span class="link-count">63</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Спорт</span>
+                                <span class="link-count">9</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text"><span
+                                    class="dropdown__text">Lorem, ipsum.</span></span>
+                                <span class="link-count">10</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Lorem ipsum dolor sit
+                                  amet.</span>
+                                <span class="link-count">999</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Lorem, ipsum dolor</span>
+                                <span class="link-count">5</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Рубашечные</span>
+                            <span class="link-count"> 79</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Свадебные</span>
+                            <span class="link-count"> 20</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Трикотажные полотна</span>
+                            <span class="link-count">433</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Клеевые</span>
+                            <span class="link-count">24</span></a>
+                        </li>
+                        <li class="dropdown__item submenu">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Подкладочные</span>
+                            <span class="link-count">118</span>
+                          </a>
+                          <span class="mobil submenu__trigger"></span>
+                          <ul class="submenu__list">
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Вельвет</span>
+                                <span class="link-count">26</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Джинс</span>
+                                <span class="link-count">8</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Жаккард</span>
+                                <span class="link-count">24</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Клетка, полоска для Lorem
+                                  ipsum dolor sit amet.</span>
+                                <span class="link-count">27</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Офисные</span>
+                                <span class="link-count">149</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Сатин костюмный</span>
+                                <span class="link-count">63</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Спорт</span>
+                                <span class="link-count">9</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text"><span
+                                    class="dropdown__text">Lorem,
+                                    ipsum.</span></span>
+                                <span class="link-count">10</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Lorem ipsum dolor sit
+                                  amet.</span>
+                                <span class="link-count">999</span></a>
+                            </li>
+                            <li class="submenu__item">
+                              <a href="" class="submenu__link"><span class="dropdown__text">Lorem, ipsum dolor</span>
+                                <span class="link-count">5</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Утеплители</span>
+                            <span class="link-count">56</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__col double">
+                      <div class="dropdown__title">По виду</div>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">105</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">105</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">105</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">5</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">5</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">5</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">37</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem ipsum dolor
+                              sit.</span><span class="link-count">37</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem ipsum dolor
+                              sit.</span><span class="link-count">37</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem ipsum dolor
+                              sit.</span><span class="link-count">25</span></a>
+                        </li>
+
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text pp">Lorem, ipsum Lorem ipsum
+                              dolor sit amet. dolor.</span><span class="link-count">158</span></a></li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">56</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">56</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">56</span></a>
+                        </li>
+
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">158</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">15</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">15</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">12</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text"></span>lorem<span
+                              class="link-count">12</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text"></span>lorem<span
+                              class="link-count">12</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">10</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">10</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">10</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">5</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">37</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">15</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">15</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum.</span><span
+                              class="link-count">12</span></a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a href="" class="dropdown__link"><span class="dropdown__text">Lorem, ipsum dolor.</span><span
+                              class="link-count">10</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="">Ткани для дома</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Фурнитура</a></li>
+              <li class="nav__item accent"><a class="nav__link" href="">%Sale</a></li>
+            </ul>
+          </nav>
+          <div class="phones mobil">
+            <ul class="phones__list">
+              <li class="phones__item"><a href="tel:+78002004150">8 800-200-4150</a> опт</li>
+              <li class="phones__item"><a href="tel:+78005518980">8 800-551-8980</a> розница</li>
+              <li class="phones__item"><img src="img/misc/wtp.svg" alt=""><a href="https://wa.me/89513661969">8 951
+                  366 19 69</a></li>
+            </ul>
+          </div>
+          <div class="adds mobil">
+            <div class="region">
+              <span>Ваш регион</span>
+              <span class="you-region">Новосибирск</span>
+            </div>
+            <div class="header__adress">г. Новосибирск, Красный пр-т, 153Б</div>
+            <div class="email"><a href="mailto:sale@tkani-textiliya.ru">sale@tkani-textiliya.ru</a></div>
+            <div class="chain"><a href="/**/">Магазины у метро</a></div>
+            <ul class="net-list row">
+              <li class="net-item fst"><a href=""><img src="img/misc/01.png" alt=""></a></li>
+              <li class="net-item scnd"><a href=""><img src="img/misc/02.png" alt=""></a></li>
+              <li class="net-item frd"><a href=""><img src="img/misc/03.png" alt=""></a></li>
+              <li class="net-item fos"><a href=""><img src="img/misc/04.png" alt=""></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container registration">
+        <div class="breadcrambs">
+          <ul class="breadcrambs__list">
+            <li class="breadcrambs__item"><a href="">Главная</a></li>
+            <li class="breadcrambs__item last">Быстрая регистрация</li>
+          </ul>
+        </div>
+        <div class="row jsb reverse">
+          <div class="aside">
+            <div class="aside__menuwidget">
+              <div class="aside__title">Личный кабинет</div>
+              <ul class="aside__menu">
+
+
+                <li class="aside__menu-item "> <a href="http://devel.tkani-textiliya.ru/login"
+                    class="list-group-item">Вход</a></li>
+                <li class="aside__menu-item current "> <a href="http://devel.tkani-textiliya.ru/register"
+                    class="list-group-item">Регистрация</a></li>
+                <li class="aside__menu-item  "><a
+                    href="http://devel.tkani-textiliya.ru/index.php?route=account/forgotten"
+                    class="list-group-item">Забыли пароль?</a></li>
+                <!--<li class="aside__menu-item"> <a href="http://devel.tkani-textiliya.ru/index.php?route=account/account" class="list-group-item list-group-item-info"><strong>Личный кабинет</strong></a></li>-->
+
+
+                <li class="aside__menu-item  "><a href="http://devel.tkani-textiliya.ru/index.php?route=account/address"
+                    class="list-group-item">Мои адреса доставки</a></li>
+                <li class="aside__menu-item   "><a
+                    href="http://devel.tkani-textiliya.ru/index.php?route=account/wishlist" class="list-group-item">Мои
+                    закладки</a></li>
+                <li class="aside__menu-item  "><a href="http://devel.tkani-textiliya.ru/index.php?route=account/order"
+                    class="list-group-item">История заказов</a></li>
+                <!--<a href="" class="list-group-item"></a>-->
+                <!--<a href="" class="list-group-item"></a>-->
+                <!--<a href="" class="list-group-item"></a>-->
+                <!--<a href="" class="list-group-item"></a>-->
+                <li class="aside__menu-item   "><a
+                    href="http://devel.tkani-textiliya.ru/index.php?route=account/newsletter"
+                    class="list-group-item">E-Mail рассылка</a></li>
+                <!--    <a href="/index.php?route=account/bonus" class="list-group-item">Бонусная карта</a>-->
+                <!--<a href="" class="list-group-item"></a>-->
+
+
+
+
+                <li class="aside__menu-item "><span>Связь со мной</span></li>
+                <li class="aside__menu-item"><a href="password.html">Мой пароль</a></li>
+                <li class="aside__menu-item"><a href="adress.html">Мои адреса доставки</a></li>
+                <li class="aside__menu-item"><a href="wishlist.html">Список желаний</a></li>
+                <li class="aside__menu-item"><a href="order.html">История заказов</a></li>
+                <li class="aside__menu-item"><a href="newsletter.html">Подписка на рассылку</a></li>
+
+
+              </ul>
+
+            </div>
+          </div>
+          <div class="content content--account">
+            <h2 class="content__lead">Быстрая регистрация</h2>
+            <div class="simple-content">
+              <form action="index.php?route=account/simpleregister" method="post" enctype="multipart/form-data"
+                id="simplepage_form" onsubmit="dataLayer.push ({'event':'client_registration'});">
+                <div class="simpleregister" id="simpleregister">
+                  <p class="simpleregister-have-account">Если Вы уже зарегистрированы, перейдите на страницу <a
+                      href="https://stage.tkani-textiliya.ru/login">входа в систему</a>.</p>
+                  <div class="simpleregister-block-content">
+                    <fieldset class="form-horizontal">
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_email">*Email</label>
+                        <input class="form-control form__input" type="email" name="register[email]" id="register_email"
+                          value="" placeholder="Обязательно для заполнения" data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_email">
+                          <div style="display:none;" data-for="register_email" data-rule="api"
+                            class="simplecheckout-error-text simplecheckout-rule" data-method="checkEmailForUniqueness"
+                            data-filter="register_register" data-filter-value="1" data-required="true">Вы уже совершали
+                            покупки,
+                            нажмите <strong>ВОЙТИ</strong> (выше справа)!</div>
+                          <div style="display:none;" data-for="register_email" data-rule="regexp"
+                            class="simplecheckout-error-text simplecheckout-rule" data-regexp=".+@.+"
+                            data-required="true">
+                            Некорректный адрес электронной почты!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_password">*Пароль</label>
+
+                        <input class="form-control form__input" type="password" name="register[password]"
+                          id="register_password" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true" data-valid="false">
+                        <div class="simplecheckout-rule-group" data-for="register_password">
+                          <div style="" data-for="register_password" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="4"
+                            data-length-max="20" data-required="true">Пароль должен быть от 4 до 20 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_firstname">*Имя</label>
+
+                        <input class="form-control form__input" type="text" name="register[firstname]"
+                          id="register_firstname" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_firstname">
+                          <div style="display:none;" data-for="register_firstname" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                            data-length-max="32" data-required="true">Имя должно быть от 1 до 32 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_lastname">*Фамилия</label>
+
+                        <input class="form-control form__input" type="text" name="register[lastname]"
+                          id="register_lastname" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_lastname">
+                          <div style="display:none;" data-for="register_lastname" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                            data-length-max="32" data-required="true">Фамилия должна быть от 1 до 32 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group ">
+                        <label class="form__label control-label col-sm-2" for="register_patronymic">Отчество</label>
+
+                        <input class="form-control form__input" type="text" name="register[patronymic]"
+                          id="register_patronymic" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_patronymic">
+                          <div style="display:none;" data-for="register_patronymic" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                            data-length-max="32">Отчество
+                            должна быть от 1 до 32 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_telephone">*Телефон</label>
+
+                        <input class="form-control form__input" type="tel" name="register[telephone]"
+                          id="register_telephone" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_telephone">
+                          <div style="display:none;" data-for="register_telephone" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="3"
+                            data-length-max="32" data-required="true">Телефон должен быть от 3 до 32 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group ">
+                        <label class="form__label control-label col-sm-2" for="register_address_1">Адрес</label>
+
+                        <input class="form-control form__input" type="text" name="register[address_1]"
+                          id="register_address_1" value="" placeholder="" data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_address_1">
+                          <div style="display:none;" data-for="register_address_1" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="3"
+                            data-length-max="128">Адрес
+                            должен быть от 3 до 128 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group ">
+                        <label class="form__label control-label col-sm-2" for="register_postcode">Индекс</label>
+
+                        <input class="form-control form__input" type="text" name="register[postcode]"
+                          id="register_postcode" value="" placeholder="" data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_postcode">
+                          <div style="display:none;" data-for="register_postcode" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="2"
+                            data-length-max="10">Индекс
+                            должен быть от 2 до 10 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_city">*Город</label>
+
+                        <input class="form-control form__input" type="text" name="register[city]" id="register_city"
+                          value="" placeholder="" data-reload-payment-form="true" minlength="2" autocomplete="off"
+                          style="" data-valid="false"><!-- display: none;-->
+                        <ul class="dropdown-menu" style="top: 41px; left: 0px;">
+                          <li data-value="0"><a href="#">Приносим свои
+                              извинения,<br> в нашей
+                              базе пока нет такого населенного пункта.<br><strong>Пожалуйста, выберите Страну и Регион
+                                вручную.</strong></a></li>
+                        </ul>
+                        <div class="simplecheckout-rule-group" data-for="register_city">
+                          <div style="display:none;" data-for="register_city" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="2"
+                            data-length-max="128" data-required="true">Город должен быть от 2 до 128 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_zone_id">*Регион</label>
+
+                        <div class="form__select-wrap">
+                          <select class="form__input" name="register[zone_id]" id="register_zone_id"
+                            data-reload-payment-form="true">
+                            <option value="" selected="selected"> --- Выберите --- </option>
+                            <option value="0" selected="selected"> --- Не выбрано --- </option>
+                          </select>
+                        </div>
+
+                        <div class="simplecheckout-rule-group" data-for="register_zone_id">
+                          <div style="display:none;" data-for="register_zone_id" data-rule="notEmpty"
+                            class="simplecheckout-error-text simplecheckout-rule" data-not-empty="1"
+                            data-required="true">Выберите
+                            регион!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_country_id">*Страна</label>
+
+                        <div class="form__select-wrap">
+                          <select class="form__input" name="register[country_id]" id="register_country_id"
+                            data-onchange="reloadAll">
+                            <option value="" selected="selected"> --- Выберите --- </option>
+                            <option value="81">Азербайджан</option>
+                            <option value="245">Армения</option>
+                            <option value="248">Беларусь</option>
+                            <option value="1280">Грузия</option>
+                            <option value="1894">Казахстан</option>
+                            <option value="2303">Киргызстан</option>
+                            <option value="2448">Латвия</option>
+                            <option value="2514">Литва</option>
+                            <option value="2788">Молдова</option>
+                            <option value="3159">Россия</option>
+                            <option value="9575">Таджикистан</option>
+                            <option value="9638">Туркменистан</option>
+                            <option value="277569">Туркмения</option>
+                            <option value="9787">Узбекистан</option>
+                            <option value="9908">Украина</option>
+                            <option value="10968">Эстония</option>
+                          </select>
+                        </div>
+
+                        <div class="simplecheckout-rule-group" data-for="register_country_id">
+                          <div style="display:none;" data-for="register_country_id" data-rule="notEmpty"
+                            class="simplecheckout-error-text simplecheckout-rule" data-not-empty="1"
+                            data-required="true">Выберите
+                            страну!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group ">
+                        <label class="form__label control-label col-sm-2" for="register_newsletter">Подписаться на
+                          новости и
+                          акции</label>
+
+
+                        <div class="form__row row">
+                          <div class="col col-20">
+                            <input class="hidden" type="radio" name="register[newsletter]" id="1" value="1"
+                              checked="checked" data-reload-payment-form="true">
+                            <label class="form__label" for="1">Да</label>
+                          </div>
+                          <div class="col col-20">
+                            <input class="hidden" type="radio" name="register[newsletter]" id="0" value="0"
+                              data-reload-payment-form="true">
+                            <label class="form__label" for="0">Нет</label>
+                          </div>
+                        </div>
+
+                      </div>
+                    </fieldset> <input type="hidden" name="register[current_address_id]"
+                      id="register_current_address_id" value="0">
+                  </div>
+                  <div class="simpleregister-button-block buttons">
+                    <div class="simpleregister-button-right">
+                      <a class="button btn-primary button_oc btn" data-onclick="submit"
+                        id="simpleregister_button_confirm"><span>Продолжить</span></a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row jsb">
+        <div class="footer__col">
+          <div class="footer__title">Клиентам</div>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="">О магазине</a></li>
+            <li class="footer__item"><a href="">Контакты</a></li>
+            <li class="footer__item"><a href="">Оптовые продажи</a></li>
+            <li class="footer__item"><a href="">Акции</a></li>
+            <li class="footer__item"><a href="">Бонусная программа</a></li>
+            <li class="footer__item"><a href="">Подарочные сертификаты</a></li>
+            <li class="footer__item"><a href="">Текстилия Дизайн</a></li>
+            <li class="footer__item"><a href="">Публичная оферта</a></li>
+            <li class="footer__item"><a href="">Политика конфеденциальности</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">Центр помощи</div>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="">Как сделать заказ?</a></li>
+            <li class="footer__item"><a href="">Как изменить или отменить заказ?</a></li>
+            <li class="footer__item"><a href="">Как узнать статус моего заказа?</a></li>
+            <li class="footer__item"><a href="">Как вернуть товар?</a></li>
+            <li class="footer__item"><a href="">Условия доставки</a></li>
+            <li class="footer__item"><a href="">Способы оплаты</a></li>
+            <li class="footer__item"><a href="mailto:sale@tkani-textiliya.ru">Напишите нам!</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">Работа у нас</div>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="">Вакансии</a></li>
+            <li class="footer__item"><a href="">Обучение</a></li>
+          </ul>
+          <div class="footer__title">Азбука швеи</div>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="">Уход за тканями</a></li>
+            <li class="footer__item"><a href="">Расход ткани</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer-net">
+          <div class="footer__title">Социальные сети</div>
+          <ul class="footer-net__list">
+            <li class="footer-net__item"><a href="">
+                <img src="img/misc/06.png"><span>Мы ВКонтакте</span>
+              </a></li>
+            <li class="footer-net__item"><a href="">
+                <img src="img/misc/05.png"><span>Наш Instagram</span>
+              </a></li>
+          </ul>
+        </div>
+        <div class="footer__col payment">
+          <div class="footer__title">Способы оплаты</div>
+          <ul class="payment__list row">
+            <li class="payment__item"><a href=""><img src="img/misc/p1.jpg" alt=""></a></li>
+            <li class="payment__item"><a href=""><img src="img/misc/p2.jpg" alt=""></a></li>
+            <li class="payment__item"><a href=""><img src="img/misc/p3.jpg" alt=""></a></li>
+            <li class="payment__item"><a href=""><img src="img/misc/p4.jpg" alt=""></a></li>
+            <li class="payment__item"><a href=""><img src="img/misc/p5.jpg" alt=""></a></li>
+            <li class="payment__item"><a href=""><img src="img/misc/p6.jpg" alt=""></a></li>
+            <li class="payment__item"><a href=""><img src="img/misc/p7.jpg" alt=""></a></li>
+            <li class="payment__item"><a href=""><img src="img/misc/p8.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom row jsa">
+        <p>Единая справочная служба (звонок по РФ бесплатный): <a href="tel:+78005518980">8-800-551-8980 </a>
+        </p>
+        <p>Текстилия © 2014-2019</p>
+      </div>
+    </div>
+  </footer>
+  <a href="#top" data-target="anchor" class="to-top"><img src="img/up.svg" alt=""></a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/shave.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    $('.dropdown__text').shave(20);
+  </script>
+
+</body>
+
+</html>
