@@ -401,7 +401,6 @@
   position: absolute;
   padding: 20px;
   top: 100%;
-  left: 0;
   left: -9999px;
   width: 100%;
   background-color: #fff;
@@ -445,30 +444,34 @@
 .dropdown__col {
   padding: 0 10px;
   flex: 1 1 0;
-  .dropdown__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 90vh;
-    .dropdown__item {
-      // display: inline-block;
-      // break-inside: avoid;
-      // page-break-inside: avoid;
-      // page-break-before: avoid;
-      // position: relative;
-      // -webkit-column-break-inside: avoid;
-      // -webkit-backface-visibility: hidden;
-      /*user*/
+  &.double {
+    flex: 2 1 1px;
+    .dropdown__list {
+      column-count: 2;
+      column-gap: 20px;
       @include bp(720px) {
-        display: flex;
-        flex-wrap: wrap;
+        column-count: 1;
       }
-      /**user*/
+      .dropdown__item {
+        display: inline-block;
+        width: 100%;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        page-break-before: avoid;
+        position: relative;
+        -webkit-column-break-inside: avoid;
+        -webkit-backface-visibility: hidden;
+        /*user*/
+        @include bp(720px) {
+          display: flex;
+        }
+        /**user*/
+      }
     }
     @include bp(720px) {
-      height: auto;
-      display: block;
+      flex: 1 1 100%;
+      margin-top: 20px;
+      padding: 0;
     }
   }
   @include bp(720px) {
@@ -476,10 +479,29 @@
     padding: 0;
   }
 }
-
+// .dropdown - предыдущий вариант
+.dropdown__col{
 .dropdown__item {
   position: relative;
   z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+  &:hover {
+    &:after {
+      background-color: $haze;
+    }
+    &:before {
+      transform: translateY(-50%) rotateZ(135deg);
+    }
+  }
 }
 
 .dropdown__link,
@@ -491,6 +513,7 @@
   padding: 4px 0;
   transition: 0.3s ease-in-out;
   color: initial;
+  // сделать невидимыми
   .link-count {
     vertical-align: bottom;
     color: $text;
@@ -511,9 +534,38 @@
 
 .submenu {
   position: relative;
-  // display: flex;
+  display: flex;
+  padding-left: 14px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(-45deg);
+    left: 1px;
+    width: 7px;
+    height: 7px;
+    border-left: 2px solid $text;
+    border-bottom: 2px solid $text;
+    transition: 0.3s ease-in-out;
+  }
+  &:hover {
+    z-index: 2;
+    > .submenu__list {
+      right: 0;
+      opacity: 1;
+      @include bp(720px) {
+        right: -9999px;
+        opacity: 0;
+      }
+      &.open {
+        position: relative;
+        right: 0;
+        opacity: 1;
+      }
+    }
+  }
   @include bp(720px) {
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-left: 0;
     &:before {
       display: none;
@@ -521,8 +573,6 @@
   }
   .dropdown__link {
     width: auto;
-    text-transform: uppercase;
-    font-weight: 600;
     @include bp(720px) {
       width: 70%; /*под палец*/
     }
@@ -530,10 +580,16 @@
 }
 
 .submenu__list {
-  padding: 2px 12px 14px 2px;
+  position: absolute;
+  top: 100%;
+  right: 9999px;
+  padding: 10px 12px 14px 12px;
+  max-width: 80%;
+  width: 100%;
+  background-color: #f5f5ff;
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: 2;
-  width: 100%;
   &.open {
     right: 0;
     opacity: 1;
@@ -547,5 +603,167 @@
 img.lazy {
   width: 100%;
   display: block;
-  background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7);
+  background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+}
+}
+
+
+.dropdown__col--new{
+  padding: 0 10px;
+  flex: 1 1 0;
+  .dropdown__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 80vh;
+    .dropdown__item {
+      // display: inline-block;
+      // break-inside: avoid;
+      // page-break-inside: avoid;
+      // page-break-before: avoid;
+      // position: relative;
+      // -webkit-column-break-inside: avoid;
+      // -webkit-backface-visibility: hidden;
+      /*user*/
+      @include bp(720px) {
+        display: flex;
+        flex-wrap: wrap; 
+      }
+      /**user*/
+    }
+    @include bp(720px) {
+      height: auto;
+      display: block;
+    }
+  }
+  @include bp(720px) {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+}
+.dropdown__col--new{
+  .dropdown__item {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+
+    & > .submenu__list{
+      margin-left: 10px;
+    }
+  }
+
+  .dropdown__link,
+  .submenu__link {
+    // это для отображения количества товаров
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    // padding: 4px 0;
+    transition: 0.3s ease-in-out;
+    color: initial;
+    .link-count {
+      vertical-align: bottom;
+      color: $text;
+      padding-left: 4px;
+      display: none;
+      visibility: hidden;
+    }
+  }
+  .dropdown__link{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  // надо убрать
+  .dropdown__title {
+    padding-bottom: 0.8em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: initial;
+  }
+
+  /*dropdown submenu*/
+
+  .submenu {
+    position: relative;
+    // display: flex;
+    @include bp(720px) {
+      // flex-wrap: wrap;
+      padding-left: 0;
+      &:before {
+        display: none;
+      }
+    }
+    .dropdown__link {
+      width: auto;
+      text-transform: uppercase;
+      font-weight: 700;
+      @include bp(720px) {
+        width: 70%; /*под палец*/
+      }
+    }
+  }
+
+  .submenu__list {
+    // padding: 2px 12px 14px 2px;
+    // margin-left: 10px;
+    text-align: left;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
+    width: 100%;
+    &.open {
+      right: 0;
+      opacity: 1;
+      position: relative;
+    }
+    @include bp(400px) {
+      max-width: 400px;
+    }
+  }
+
+
+  img.lazy {
+    width: 100%;
+    display: block;
+    background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7);
+  }
+  .submenu--third{
+    // 
+    .submenu__link{
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    & > .submenu__item{
+      margin-bottom: 8px;
+    }
+  }
+  // список второго уровня
+  .submenu--second{
+    // list-style: disc;
+    position: relative;
+    & > li {
+      position: relative;
+      padding-left: 10px;
+      &::before{
+        content: '\2022';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+        font-size: 16px;
+      }
+    }
+    .submenu__link{
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 3px;
+      color: $second-list-color;
+    }
+  }
 }
