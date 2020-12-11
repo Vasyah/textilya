@@ -33,33 +33,28 @@ $(document).ready(function () {
     $('.user__login').removeClass('open');
   });
 
-  function scrollToggle(val) {
-    if (val === 'on') {
-      document.body.style.position = '';
-      document.body.style.top = '';
-    }
-    else {
-      document.body.style.position = 'fixed';
-      document.body.style.top = `-${window.scrollY}px`;
-    }
-  }
+
 
   /*menu behavior on mobile breakpoint */
 
   $('.menu-trigger').click(function () {
     $('.header__nav').addClass('open');
-    scrollToggle('off');
-
+    // scroll-off
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${window.scrollY}px`;
   });
   $(document).mouseup(function (e) {
     if (!$('.header__nav').is(e.target) && $('.header__nav').has(e.target).length === 0) {
       $('.header__nav').removeClass('open');
-      scrollToggle('on');
+      document.body.style.position = '';
+      document.body.style.top = '';
     }
   });
   $('.menu-close').click(function () {
     $('.header__nav').removeClass('open');
-    scrollToggle('off');
+    // scroll-on
+    document.body.style.position = '';
+    document.body.style.top = '';
   });
 
   $('.dropdown__trigger').click(function () {

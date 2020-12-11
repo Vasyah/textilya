@@ -1,9 +1,9 @@
 .main {
   margin-top: 20px;
   margin-bottom: 5%;
-  //@include bp(720px) {
-  //  margin-top: 80px;
-  //}
+  @media (max-width:720px) {
+   margin-top: 80px;
+  }
 }
 
 .slider {

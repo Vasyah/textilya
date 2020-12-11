@@ -1,0 +1,19 @@
+// changelog 28.11.20 - перевёрстка меню
+
+// 1 - для первого <a class="submenu__link"> в <li class="submenu__item">, 
+// в котором будет содержаться третий уровень меню, добавить класс submenu__title
+// 2 - для третьего уровня <ul class="submenu__list"> добавить класс pl-5
+
+
+// структура по классам (. - обозначение класса, например .example = class="example")
+// ul.dropdown__list - список всего меню
+//   li.dropdown__item submenu - первый уровень меню
+//     a.dropdown__link - ссылка первого уровня
+//     ul.submenu__list - список второго уровня
+//       li.submenu__item - элемент второго уровня, не содержащий список третьего уровня
+//         a.submenu__link - ссылка второго уровня
+//       li.submenu__item - элемент второго уровня, содержащий список третьего уровня
+//         a.submenu__link submenu__title - ссылка третьего уровня
+//         ul.submenu__list pl-5 - список третьего уровня
+//           li.submenu__item - элемент третьего уровня 
+//             a.submenu__link - ссылка третьего уровня

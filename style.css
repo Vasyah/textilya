@@ -1,0 +1,62 @@
+/* для всех убираем маркер */
+.dropdown__list, .submenu__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu__item{
+    padding: 5px 5px 5px 10px;
+}
+.dropdown__list a{
+    text-decoration: none;
+}
+
+.dropdown__link{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color:#000;
+}
+
+.submenu__link{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 3px;
+    color: #aaa;
+}
+
+.submenu__title{
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+/* для заголовочного элемента в маркированном списке убрать маркер */
+.marker > .submenu__item > .submenu__title::before{
+    display: none;
+}
+
+.marker > .submenu__item > .submenu__link {
+    position: relative;
+    padding-left: 10px;
+}
+
+
+/* для всех ссылок добавляем псевдоэлемент(маркер) */
+.marker > .submenu__item > .submenu__link::before{
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 16px;
+}
+
+
+/* marker - добавляем маркер всем элементам первого уровня добавляется для <ul class="submenu__list> */
+/* submenu__list - подменю - начиная со второго уровня, не важна глубина */
+/* sumbenu__item - элемент подменю, обязательно должен содержать <a class="submenu__link> */
+/* sumbenu-title -добавляется для <a class="submenu__link> говорит о том, что данное меню будет содержать под собой элементы  */
+/*  */
