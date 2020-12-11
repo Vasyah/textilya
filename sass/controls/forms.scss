@@ -54,8 +54,8 @@
 .search__form-input {
   display: block;
   padding: 0.5em 1em 0.5em 3em;
-  border-radius: 25px;
-  background-color: $mist;
+  border-radius: 5px;
+  background-color: $light-gray;
   @include bp(720px) {
     display: inline-block;
     vertical-align: middle;

@@ -1,8 +1,4 @@
 @charset "UTF-8";
-:root {
-  --light-gray: #eeeded;
-  --primary: #d05252;
-}
 @-moz-viewport {
   width: device-width;
   initial-scale: 1;
@@ -1130,7 +1126,8 @@ table .wide-cell {
   white-space: nowrap;
   font-weight: 600;
   padding: 6px 10px;
-  background-color: #dddddd;
+  background-color: #eeeded;
+  color: #d05252;
 }
 
 /*breadcrambs*/
@@ -1816,8 +1813,8 @@ table .wide-cell {
 .search__form-input {
   display: block;
   padding: 0.5em 1em 0.5em 3em;
-  border-radius: 25px;
-  background-color: #dddddd;
+  border-radius: 5px;
+  background-color: #eeeded;
 }
 @media (max-width: 720px) {
   .search__form-input {
@@ -2291,7 +2288,7 @@ textarea {
 
 .header__top {
   padding-top: 5px;
-  background-color: #dddddd;
+  background-color: #eeeded;
 }
 @media (max-width: 720px) {
   .header__top {
@@ -2589,7 +2586,7 @@ textarea {
 
 /*navigation*/
 .header__nav {
-  background-color: #d05252;
+  background-color: #eeeded;
 }
 @media (max-width: 720px) {
   .header__nav {
@@ -2639,7 +2636,8 @@ textarea {
 .nav__item {
   flex: 1 1 auto;
   text-align: center;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease-out;
+  color: #d05252;
 }
 .nav__item.current {
   background-color: #c63b3b;
@@ -2647,11 +2645,9 @@ textarea {
 .nav__item.current:hover {
   background-color: #c63b3b;
 }
-.nav__item.accent {
-  background-color: #e78f84;
-}
 .nav__item:hover {
-  background-color: #656798;
+  background-color: #d05252;
+  color: #fff;
 }
 @media (max-width: 720px) {
   .nav__item {
@@ -2673,7 +2669,6 @@ textarea {
   font-size: 1.2em;
   font-weight: 700;
   text-transform: uppercase;
-  color: #fff;
 }
 
 /*dropdown*/
@@ -2756,7 +2751,6 @@ textarea {
   flex: 2 1 1px;
 }
 .dropdown__col.double .dropdown__list .dropdown__item {
-  /*user*/
   /**user*/
 }
 @media (max-width: 720px) {
