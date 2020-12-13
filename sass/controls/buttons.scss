@@ -19,6 +19,31 @@
       vertical-align: baseline;
     }
   }
+  &-header {
+    padding: 0.9em 1em 0.9em 2.7em;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    &--icon {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        background: url("../img/burger.svg") center center/cover no-repeat;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 10px;
+        transform: translate(0, -50%);
+        transition: background 300ms ease-in;
+      }
+    }
+    &--icon-close{
+      &:before{
+        background: url("../img/burger-close.svg") center center/cover no-repeat;
+      }
+    }
+  }
   &--big {
     padding: 0.9em 1.4em 1em 1.4em;
     text-transform: none;
